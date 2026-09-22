@@ -14,7 +14,7 @@ nsParentalControlsService::~nsParentalControlsService() {}
 
 NS_IMETHODIMP
 nsParentalControlsService::GetParentalControlsEnabled(bool* aResult) {
-  *aResult = mEnabled;
+  *aResult = false;
   return NS_OK;
 }
 
