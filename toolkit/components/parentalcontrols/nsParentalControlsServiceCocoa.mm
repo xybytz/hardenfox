@@ -11,8 +11,7 @@
 NS_IMPL_ISUPPORTS(nsParentalControlsService, nsIParentalControlsService)
 
 nsParentalControlsService::nsParentalControlsService() : mEnabled(false) {
-  mEnabled = CFPreferencesAppValueIsForced(
-      CFSTR("restrictWeb"), CFSTR("com.apple.familycontrols.contentfilter"));
+  mEnabled = false; // L parental controls
 }
 
 nsParentalControlsService::~nsParentalControlsService() = default;
